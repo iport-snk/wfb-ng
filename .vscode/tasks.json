@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "build wfb_tx",
+        "type": "shell",
+        "command": "make",
+        "args": ["CFLAGS=-g", "wfb_tx"],
+        "group": "build",
+        "problemMatcher": ["$gcc"]
+    },{
+        "label": "build wfb_rx",
+        "type": "shell",
+        "command": "make",
+        "args": ["CFLAGS=-g", "wfb_tx"],
+        "group": "build",
+        "problemMatcher": ["$gcc"]
+    },{
+        "label": "build debug",
+        "type": "shell",
+        "command": "make",
+        "args": ["debug"],
+        "group": "build",
+        "problemMatcher": ["$gcc"]
+    }]
+}

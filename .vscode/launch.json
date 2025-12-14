@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to (wfb_tx)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/wfb_tx",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "miDebuggerServerAddress": "localhost:1234",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "stopAtConnect": true,
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Attach to (wfb_rx)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/wfb_rx",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "miDebuggerServerAddress": "localhost:1234",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "stopAtConnect": true,
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
