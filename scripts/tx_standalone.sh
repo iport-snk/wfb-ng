@@ -38,4 +38,4 @@ case $BAND in
 esac
 
 # Video TX
-./wfb_tx -p 0 -u 5602 -K drone.key $WLAN
+../wfb_tx -p 1 -u 5602 -K ../drone.key $WLAN

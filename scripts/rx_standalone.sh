@@ -39,4 +39,4 @@ esac
 done
 
 # No UI, video only
-./wfb_rx -p 0 -u 5600 -K gs.key $WLANS
+../wfb_tx -p 1 -u 5602 -K ../drone.key $WLAN

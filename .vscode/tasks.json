@@ -15,11 +15,10 @@
         "group": "build",
         "problemMatcher": ["$gcc"]
     },{
-        "label": "build debug",
+        "label": "start gdbserver wfb_tx",
         "type": "shell",
-        "command": "make",
-        "args": ["debug"],
-        "group": "build",
-        "problemMatcher": ["$gcc"]
+        "command": "sudo",
+        "args": ["gdbserver", ":1234", "./wfb_tx", "-p", "1", "-u", "5602", "-K", "./drone.key", "wlan0"],
+        "isBackground": true
     }]
 }

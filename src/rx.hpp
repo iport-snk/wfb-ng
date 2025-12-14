@@ -31,6 +31,8 @@
 #include <string.h>
 #include <stdexcept>
 
+#include <zmq.hpp>
+
 #include "wifibroadcast.hpp"
 #include "zfex.h"
 
@@ -301,3 +303,5 @@ private:
     int fd;
     pcap_t *ppcap;
 };
+
+void test_zmq();

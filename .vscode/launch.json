@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Attach to (wfb_tx)",
+            "name": "wfb_tx",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/wfb_tx",
@@ -20,7 +20,7 @@
             ]
         },
         {
-            "name": "Attach to (wfb_rx)",
+            "name": "wfb_rx",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/wfb_rx",

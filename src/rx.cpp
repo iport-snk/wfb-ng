@@ -1223,6 +1223,8 @@ int main(int argc, char* const *argv)
         return 1;
     }
 
+    test_zmq();
+
     try
     {
         uint32_t channel_id = (link_id << 8) + radio_port;
@@ -1276,6 +1278,21 @@ int main(int argc, char* const *argv)
         exit(1);
     }
     return 0;
+}
+
+void test_zmq()
+{
+    try
+    {
+        zmq::context_t context(1);
+        zmq::socket_t socket(context, ZMQ_PUB);
+        WFB_INFO("ZeroMQ library is working correctly.\n");
+    }
+    catch(const std::exception& e)
+    {
+        WFB_ERR("ZeroMQ test failed: %s\n", e.what());
+        exit(1);
+    }
 }
 
 #endif
